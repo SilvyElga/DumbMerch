@@ -17,6 +17,7 @@ import Product from './Components/Product';
 import Profile from './Components/Profile';
 import Complain from './Components/Complain';
 import Logout from './Components/Logout';
+import Detail from './Components/Detail';
 import PrivateRoute from './Components/PrivateRoute';
 
 // import Compnav from './Components/Compnav';
@@ -44,6 +45,7 @@ function App() {
       <Nav.Link as={Link} to={"/Complain"} >Complain</Nav.Link>
       <Nav.Link as={Link} to={"/Profile"} >Profile</Nav.Link>
       <Nav.Link as={Link} to={"/Logout"} >Logout</Nav.Link>
+      <Nav.Link as={Link} to={"/Detail"} ></Nav.Link>
     </Nav>
   </Navbar.Collapse>
   </Container>
@@ -57,7 +59,10 @@ function App() {
         <Route path="/Product" element={<Product/>} />
         <Route path="/Profile" element={<Profile/>} />
         <Route path="/Complain" element={<Complain/>} />
+        <Route path="/Detail" element={<Detail/>} />
         <Route path="/Loguot" element={<Logout/>} />
+        
+        
         </Route> 
         
       </Routes>
