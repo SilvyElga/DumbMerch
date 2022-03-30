@@ -1,7 +1,10 @@
 import React from 'react'
 
 // import necessary object from react-router-dom
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
+import {Container, Navbar, Nav} from 'react-bootstrap';
+
+
 
 // import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
@@ -11,30 +14,52 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import Product from './Components/Product';
+import Profile from './Components/Profile';
+import Complain from './Components/Complain';
+import Logout from './Components/Logout';
+import PrivateRoute from './Components/PrivateRoute';
+
+// import Compnav from './Components/Compnav';
+import logo from './Components/pic/logo.jpeg';
+
+
 
 
 function App() {
   return (
     <BrowserRouter>
-      {/* <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Login</Link>
-            </li>
-            <li>
-              <Link to="/Register">Register</Link>
-            </li>
-            <li>
-              <Link to="/Product">Product</Link>
-            </li>
-          </ul>
-        </nav>
-      </div> */}
+      <div>
+
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+  <Container>
+  <Navbar.Brand href="#home"><img className="card-img-top justify-content-center"  src={logo}alt="" style={{width: '40px'}}/></Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="me-auto">
+    </Nav>
+    <Nav>
+    <Nav.Link as={Link} to={"/"} ></Nav.Link>
+    <Nav.Link as={Link} to={"/Register"} ></Nav.Link>
+    <Nav.Link as={Link} to={"/Product"} ></Nav.Link>
+      <Nav.Link as={Link} to={"/Complain"} >Complain</Nav.Link>
+      <Nav.Link as={Link} to={"/Profile"} >Profile</Nav.Link>
+      <Nav.Link as={Link} to={"/Logout"} >Logout</Nav.Link>
+    </Nav>
+  </Navbar.Collapse>
+  </Container>
+</Navbar>
+
+      </div>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/Register" element={<Register/>} />
+        <Route path="/" element={<PrivateRoute/>}>
         <Route path="/Product" element={<Product/>} />
+        <Route path="/Profile" element={<Profile/>} />
+        <Route path="/Complain" element={<Complain/>} />
+        <Route path="/Loguot" element={<Logout/>} />
+        </Route> 
+        
       </Routes>
     </BrowserRouter>
   );

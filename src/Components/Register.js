@@ -46,7 +46,10 @@ function Register () {
                                     <label for="exampleInputPassword1" className="form-label"></label>
                                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder='Password'/>
                                 </div>
-                                 <button type="submit" className="btn btn-danger">Submit</button>
+                                <div class="d-grid gap-2">
+                                 <button class="btn btn-danger" type="button">Register</button>
+
+                                </div>
                             </form>
                         </div>
                     </div>

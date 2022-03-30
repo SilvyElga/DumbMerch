@@ -22,7 +22,7 @@ function Login () {
 
            <div className="row justify-content-center pt-5">
             <div className="col-4 text-light">
-            <img className="card-img-top"  src={logo}alt="" style={{width: '150px'}}/>
+            <img className="card-img-top justify-content-center"  src={logo}alt="" style={{width: '150px'}}/>
             <h2> Easy Fast and Reliable</h2>
                  <p>Go Shopping for marchendise, just go to dumb merch
                      shopping the biggest merchandise in Indonesia
@@ -49,8 +49,13 @@ function Login () {
                                     <label for="exampleInputPassword1" className="form-label"></label>
                                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder='Password'/>
                                 </div>
+
+                                <div class="d-grid gap-2">
+                                 <button class="btn btn-danger" type="button">Login</button>
+
+                                </div>
   
-                                 <button type="submit" className="btn btn-danger">Submit</button>
+                                 {/* <button type="submit" className="btn btn-danger">Submit</button> */}
                             </form>
                         </div>
                     </div>
