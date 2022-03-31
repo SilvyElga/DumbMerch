@@ -44,7 +44,7 @@ function App() {
     <Nav.Link as={Link} to={"/Product"} ></Nav.Link>
       <Nav.Link as={Link} to={"/Complain"} >Complain</Nav.Link>
       <Nav.Link as={Link} to={"/Profile"} >Profile</Nav.Link>
-      <Nav.Link as={Link} to={"/Logout"} >Logout</Nav.Link>
+      <Nav.Link as={Link} to={"/"} >Logout</Nav.Link>
       <Nav.Link as={Link} to={"/Detail"} ></Nav.Link>
     </Nav>
   </Navbar.Collapse>

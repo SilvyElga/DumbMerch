@@ -3,9 +3,17 @@ import './loginStyle.css';
 // import {container, form, col, button} from 'react-bootstrap';
 
 // import {useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 
 function Login () {
+    const navigate = useNavigate();
+
+    const handleNavigateToDetail = () =>{
+
+        navigate('/Detail')
+    }
+
 
     
 
@@ -21,8 +29,8 @@ function Login () {
                                      <h2>Mouse</h2>
                                      <p>Rp.500.000</p>
                                      <p>stock: 600</p>
-
                                  </div>
+                                 <button type="button" className="btn btn-danger"onClick={handleNavigateToDetail}>Buy</button>
                             </div>
                             
                     </div>
@@ -37,6 +45,7 @@ function Login () {
                                      <p>stock: 600</p>
 
                                  </div>
+                                 <button type="button" className="btn btn-danger"onClick={handleNavigateToDetail}>Buy</button>
                             </div>
                             
                     </div>
@@ -50,6 +59,7 @@ function Login () {
                                      <p>stock: 600</p>
 
                                  </div>
+                                 <button type="button" className="btn btn-danger"onClick={handleNavigateToDetail}>Buy</button>
                             </div>
                             
                     </div>
