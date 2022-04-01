@@ -21,9 +21,9 @@ function Profile () {
                 </div>
                 <div class="p-2 flex-fill bd-highlight">
                          <p>Name <br/>
-                         citty</p>
+                         Belang</p>
                          <p>Email<br/>
-                         citty@mail.com</p>
+                         belang@mail.com</p>
                          <p>Phone<br/>
                          083896833122</p>
                          <p>Gender<br/>
