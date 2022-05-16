@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-
+import dataProduct from './Data';
 // import {container, form, col, button} from 'react-bootstrap';
 
 // import images from './pic/images.jpg';
