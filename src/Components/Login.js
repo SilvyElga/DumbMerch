@@ -4,7 +4,7 @@ import './loginStyle.css';
 // import {container, form, col, button} from 'react-bootstrap';
 
 import Product from './Product'
-import GuestGreeting from './GuestGreeting';
+// import GuestGreeting from './GuestGreeting';
 
 import {useNavigate} from 'react-router-dom';
 import logo from './pic/logo.jpeg'
@@ -14,38 +14,38 @@ import logo from './pic/logo.jpeg'
 
 
 function Login () {
-    const [state, setState] = useState({
-        isLogin: false,
-        user: {
-            email: '',
-            password: '',
-        },
-    });
+    // const [state, setState] = useState({
+    //     isLogin: false,
+    //     user: {
+    //         email: '',
+    //         password: '',
+    //     },
+    // });
 
-    useEffect(() => {
-        console.log('App Component Did Mount');
-        console.log(state);
-        },[]);
+    // useEffect(() => {
+    //     console.log('App Component Did Mount');
+    //     console.log(state);
+    //     },[]);
 
-    useEffect(() =>{
-        if(state.isLogin == true ){
-            console.log('App Component Did Update');
-            console.log(state);    
-        }
-    }, [state]);
+    // useEffect(() =>{
+    //     if(state.isLogin == true ){
+    //         console.log('App Component Did Update');
+    //         console.log(state);    
+    //     }
+    // }, [state]);
 
-    const handleOnSubmit = (e) => {
-        e.preventDefault();
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        setState({
-            isLogin: true,
-            user: {
-                email,
-                password,
-            },
-        });
-    };
+    // const handleOnSubmit = (e) => {
+    //     e.preventDefault();
+    //     const email = document.getElementById('email').value;
+    //     const password = document.getElementById('password').value;
+    //     setState({
+    //         isLogin: true,
+    //         user: {
+    //             email,
+    //             password,
+    //         },
+    //     });
+    // };
 
     
     
@@ -61,11 +61,11 @@ function Login () {
 
     return (
         <>
-        {state.isLogin ? (
+        {/* {state.isLogin ? (
             <Product/>
         ) : (
             <>
-            <GuestGreeting/>
+            <GuestGreeting/> */}
             <div className="Container-login">
 
            <div className="row justify-content-center pt-5">
@@ -87,7 +87,7 @@ function Login () {
                     <div className="card bg-dark ">
                         <div class="card-body bg-dark">
                             <h5 class="card-title">Login</h5>
-                            <form onSubmit={handleOnSubmit} >
+                            <form >
                                 <div className="mb-3">
                                      <label for="email" className="form-label"></label>
                                     <input 
@@ -122,11 +122,11 @@ function Login () {
                     </div>
             </div>
         </div> 
-        </>   
+        // </>   
         )}
-        </>
+        // </>
         
-    )
-};
+    // )
+// };
 
 export default Login;

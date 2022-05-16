@@ -5,6 +5,8 @@ import React, { useState } from 'react'
 
 // import images from './pic/images.jpg';
 import trolley from './pic/shopping-cart.png';
+import NavClient from './NavClient';
+
 
 function Detail (){
     const [counter, setCounter] = useState(0);
@@ -27,7 +29,7 @@ function less(){
     return (
         
         <div className="Container-login">
-
+             <NavClient/>
             <div class="row justify-content-center p-5">
                 <div class="col-4">
                 <img className="card-img-top" src="https://m.media-amazon.com/images/I/61LtuGzXeaL._AC_SL1465_.jpg" alt="" style={{width: '300px'}}/>

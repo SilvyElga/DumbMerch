@@ -1,6 +1,7 @@
 import React from 'react';
 import './loginStyle.css';
 // import {container, form, col, button} from 'react-bootstrap';
+import NavClient from './NavClient';
 
 
 import images from './pic/images.jpg';
@@ -11,7 +12,7 @@ function Profile () {
 
     return (
         <div className="Container-login">
-
+            <NavClient/>
             <div className="row justify-content-center pt-5">
                 <div className="col-5 text-light ml-5">
                     <div className="title-profile">My Profile</div>

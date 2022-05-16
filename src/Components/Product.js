@@ -4,9 +4,16 @@ import './loginStyle.css';
 
 // import {useNavigate} from 'react-router-dom';
 import {useNavigate} from 'react-router-dom';
+import {Nav,Navbar,Container} from 'react-bootstrap'
+import logo from './pic/logo.jpeg'
+
+import NavClient from './NavClient'
+
 
 
 function Login () {
+
+    
     const navigate = useNavigate();
 
     const handleNavigateToDetail = () =>{
@@ -18,7 +25,11 @@ function Login () {
     
 
     return (
+        
+        
         <div className="Container-login text-danger">
+            <NavClient/>
+        
                 <div className= "title-product fs-3">Product</div>
             <div className="d-flex flex-row">
                     <div className="p-2 text-light">
@@ -71,6 +82,7 @@ function Login () {
                     
             
         </div>    
+        
     )
 };
 
