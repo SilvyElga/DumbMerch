@@ -45,7 +45,7 @@ function App() {
         <Route path="/Category" element={<Category/>} />
         <Route path="/Productb" element={<Productb/>} />
         <Route path="/Detail" element={<Detail/>} />
-        <Route path="/Loguot" element={<Logout/>} />
+        <Route path="/Logout" element={<Logout/>} />
         
         
         

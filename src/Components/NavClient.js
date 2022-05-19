@@ -11,7 +11,6 @@ function NavClient(props) {
     let navigate = useNavigate()
 
     const logout = () => {
-        console.log(state)
         dispatchEvent({
             type:'LOGOUT'
         })
